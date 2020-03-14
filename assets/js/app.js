@@ -8,6 +8,7 @@ import CustomersPages from "./pages/CustomersPage";
 import HomePage from "./pages/HomePage";
 import InvoicesPage from "./pages/InvoicesPage";
 import LoginPage from "./pages/LoginPage";
+import LoginPage from "./pages/AboutPage";
 import AuthAPI from "./services/AuthAPI.Js";
 import LoginRoute from "./Components/LoginRoute";
 import CustomerPage from "./pages/CustomerPage";

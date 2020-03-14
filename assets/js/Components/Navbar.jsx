@@ -44,6 +44,11 @@ const Navbar = ({ history }) => {
               Factures
             </NavLink>
           </li>
+                    <li className="nav-item">
+            <NavLink className="nav-link" to="/about">
+              About
+            </NavLink>
+          </li>
         </ul>
         <ul className="navbar-nav ml-auto">
           {(!isAuth && (
