@@ -15,7 +15,7 @@ const HomePage = props => {
       </p>
       <p className="lead">
         <a className="btn btn-primary btn-lg" href="#" role="button">
-         Click ME
+        Click Here
         </a>
       </p>
     </div>
