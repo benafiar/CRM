@@ -4,6 +4,7 @@ import CustomerAPI from "../services/CustomerAPI";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import TableLoader from "../Components/loaders/TableLoader";
+import AsideNav from "../Components/AsideNav";
 
 const CustomersPages = props => {
   const [customers, setCustomers] = useState([]);
@@ -70,7 +71,9 @@ const CustomersPages = props => {
 
   return (
     <>
+    
       <div className="mb-3 d-flex justify-content-between align-items-center">
+      <AsideNav/>
         <h1>Liste des clients</h1>
 
         <Link to="/customers/new" className="btn btn-primary">
