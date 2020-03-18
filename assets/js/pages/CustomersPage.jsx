@@ -4,6 +4,7 @@ import CustomerAPI from "../services/CustomerAPI";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import TableLoader from "../Components/loaders/TableLoader";
+import "bootstrap";
 
 const CustomersPages = props => {
   const [customers, setCustomers] = useState([]);
