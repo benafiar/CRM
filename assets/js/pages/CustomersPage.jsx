@@ -70,7 +70,6 @@ const CustomersPages = props => {
 
   return (
     <>
-      <div className="flexible-content">
       <div className="mb-3 d-flex justify-content-between align-items-center">
      
         <h1>Liste des clients</h1>
