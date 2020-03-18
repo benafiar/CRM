@@ -34,38 +34,38 @@ const Navbar = ({ history }) => {
 
       <div className="collapse navbar-collapse" id="navbarColor03">
         <ul className="navbar-nav mr-auto">
-          <li className="nav-item">
+          <li className="c-sidebar-nav-item">
             <NavLink className="nav-link" to="/customers">
               Clients
             </NavLink>
           </li>
-          <li className="nav-item">
+          <li className="c-sidebar-nav-item">
             <NavLink className="nav-link" to="/invoices">
              About
             </NavLink>
           </li>
-          <li className="nav-item">
+          <li className="c-sidebar-nav-item">
             <NavLink className="nav-link" to="/about">
               About
             </NavLink>
           </li>
         </ul>
-        <ul className="navbar-nav ml-auto">
+        <ul className="navbar-nav mr-auto">
           {(!isAuth && (
             <>
-              <li className="nav-item">
+              <li className="c-sidebar-nav-item">
                 <NavLink className="nav-link" to="/register">
                   Inscription
                 </NavLink>
               </li>
-              <li className="nav-item">
+              <li className="c-sidebar-nav-item">
                 <NavLink className="btn btn-success" to="/login">
                   Connexion !
                 </NavLink>
               </li>
             </>
           )) || (
-            <li className="nav-item">
+            <li className="c-sidebar-nav-item">
               <button className="btn btn-danger" onClick={handleLogout}>
                 Déconnexion !
               </button>
