@@ -73,7 +73,7 @@ const Navbar = ({ history }) => {
       </a>
     </li>
   </ul>
-  <button class="c-sidebar-minimizer c-brand-minimizer" type="button"></button>
+  
 
     
 
