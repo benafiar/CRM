@@ -71,9 +71,11 @@ const CustomersPages = props => {
 
   return (
     <>
-    
+      <div className="flexible-content">
+        <AsideNav/>
+      </div>
       <div className="mb-3 d-flex justify-content-between align-items-center">
-      <AsideNav/>
+     
         <h1>Liste des clients</h1>
 
         <Link to="/customers/new" className="btn btn-primary">
