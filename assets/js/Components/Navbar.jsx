@@ -32,24 +32,52 @@ const Navbar = ({ history }) => {
         <span className="navbar-toggler-icon"></span>
       </button>
 
-      <div className="collapse navbar-collapse" id="navbarColor03">
-        <ul className="navbar-nav mr-auto">
-          <li className="c-sidebar-nav-item">
-            <NavLink className="nav-link" to="/customers">
-              Clients
-            </NavLink>
-          </li>
-          <li className="c-sidebar-nav-item">
-            <NavLink className="nav-link" to="/invoices">
-             About
-            </NavLink>
-          </li>
-          <li className="c-sidebar-nav-item">
-            <NavLink className="nav-link" to="/about">
+      <div class="c-sidebar c-sidebar-dark c-sidebar-show">
+  <ul class="c-sidebar-nav">
+    <li class="c-sidebar-nav-title">Nav Title</li>
+    <li class="c-sidebar-nav-item">
+      <NavLink className="nav-link" to="/customers">
+                Clients
+      </NavLink>
+    </li>
+    <li class="c-sidebar-nav-item">
+      <NavLink className="nav-link" to="/invoices">
               About
-            </NavLink>
-          </li>
-        </ul>
+      </NavLink>
+    </li>
+    <li class="c-sidebar-nav-item nav-dropdown">
+      <NavLink className="nav-link" to="/invoices">
+             About
+      </NavLink>
+      <ul class="c-sidebar-nav-dropdown-items">
+        <li class="c-sidebar-nav-item">
+          <a class="c-sidebar-nav-link" href="#">
+            <i class="c-sidebar-nav-icon cil-puzzle"></i> Nav dropdown item
+          </a>
+        </li>
+        <li class="c-sidebar-nav-item">
+          <a class="c-sidebar-nav-link" href="#">
+            <i class="c-sidebar-nav-icon cil-puzzle"></i> Nav dropdown item
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="c-sidebar-nav-item mt-auto">
+      <a class="c-sidebar-nav-link c-sidebar-nav-link-success" href="https://coreui.io">
+        <i class="c-sidebar-nav-icon cil-cloud-download"></i> Download CoreUI</a>
+    </li>
+    <li class="c-sidebar-nav-item">
+      <a class="c-sidebar-nav-link c-sidebar-nav-link-danger" href="https://coreui.io/pro/">
+        <i class="c-sidebar-nav-icon cil-layers"></i> Try CoreUI
+        <strong>PRO</strong>
+      </a>
+    </li>
+  </ul>
+  <button class="c-sidebar-minimizer c-brand-minimizer" type="button"></button>
+
+    
+
+      
         <ul className="navbar-nav mr-auto">
           {(!isAuth && (
             <>
