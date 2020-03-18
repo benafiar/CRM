@@ -17,6 +17,7 @@ import RegisterPage from "./pages/RegisterPage";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "bootstrap";
+import 'index.css';
 // any CSS you require will output into a single css file (app.css in this case)
 require("../css/app.css");
 
