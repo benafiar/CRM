@@ -94,7 +94,7 @@ const Navbar = ({ history }) => {
             </li>
           )}
         </ul>
-      </div>
+    
     </nav>
   );
 };
