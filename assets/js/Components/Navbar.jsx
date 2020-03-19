@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import AuthAPI from "../services/AuthAPI.Js";
 import { NavLink } from "react-router-dom";
 import AuthContext from "../context/AuthContext";
+import { MDBIcon, MDBSideNavCat, MDBSideNavNav, MDBSideNav, MDBSideNavLink, MDBContainer, MDBRow, MDBBtn } from 'mdbreact';
 
 const Navbar = ({ history }) => {
   const { isAuth, setIsAuth } = useContext(AuthContext);
@@ -32,47 +33,40 @@ const Navbar = ({ history }) => {
         <span className="navbar-toggler-icon"></span>
       </button>
 
-      <div class="c-sidebar c-sidebar-dark c-sidebar-show">
-  <ul class="c-sidebar-nav">
-    <li class="c-sidebar-nav-title">Nav Title</li>
-    <li class="c-sidebar-nav-item">
-      <NavLink className="nav-link" to="/customers">
-                Clients
-      </NavLink>
-    </li>
-    <li class="c-sidebar-nav-item">
-      <NavLink className="nav-link" to="/invoices">
-              About
-      </NavLink>
-    </li>
-    <li class="c-sidebar-nav-item nav-dropdown">
-      <NavLink className="nav-link" to="/invoices">
-             About
-      </NavLink>
-      <ul class="c-sidebar-nav-dropdown-items">
-        <li class="c-sidebar-nav-item">
-          <a class="c-sidebar-nav-link" href="#">
-            <i class="c-sidebar-nav-icon cil-puzzle"></i> Nav dropdown item
-          </a>
-        </li>
-        <li class="c-sidebar-nav-item">
-          <a class="c-sidebar-nav-link" href="#">
-            <i class="c-sidebar-nav-icon cil-puzzle"></i> Nav dropdown item
-          </a>
-        </li>
-      </ul>
-    </li>
-    <li class="c-sidebar-nav-item mt-auto">
-      <a class="c-sidebar-nav-link c-sidebar-nav-link-success" href="https://coreui.io">
-        <i class="c-sidebar-nav-icon cil-cloud-download"></i> Download CoreUI</a>
-    </li>
-    <li class="c-sidebar-nav-item">
-      <a class="c-sidebar-nav-link c-sidebar-nav-link-danger" href="https://coreui.io/pro/">
-        <i class="c-sidebar-nav-icon cil-layers"></i> Try CoreUI
-        <strong>PRO</strong>
-      </a>
-    </li>
-  </ul>
+         <MDBContainer>
+          <MDBSideNav slim fixed mask="rgba-blue-strong" triggerOpening={this.state.sideNavLeft} breakWidth={1300}
+            className="sn-bg-1">
+            <li>
+              <div className="logo-wrapper sn-ad-avatar-wrapper">
+                <a href="#!">
+                  <img alt="" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" className="rounded-circle" />
+                  <span>Anna Deynah</span>
+                </a>
+              </div>
+            </li>
+
+            <MDBSideNavNav>
+              <MDBSideNavLink to="/other-page" topLevel>
+                <MDBIcon icon="pencil-alt" className="mr-2" />Submit listing</MDBSideNavLink>
+              <MDBSideNavCat name="Submit blog" id="submit-blog" icon="chevron-right"  to="/customers">
+                <MDBSideNavLink>Submit listing</MDBSideNavLink>
+                <MDBSideNavLink>Registration form</MDBSideNavLink>
+              </MDBSideNavCat>
+              <MDBSideNavCat name="Instruction" id="instruction" icon="hand-pointer" to="/invoices">
+                <MDBSideNavLink>For bloggers</MDBSideNavLink>
+                <MDBSideNavLink>For authors</MDBSideNavLink>
+              </MDBSideNavCat>
+              <MDBSideNavCat name="About" id="about" icon="eye" to="/invoices">
+                <MDBSideNavLink>Instruction</MDBSideNavLink>
+                <MDBSideNavLink>Monthly meetings</MDBSideNavLink>
+              </MDBSideNavCat>
+              <MDBSideNavCat name="Contact me" id="contact-me" icon="envelope" to="/invoices">
+                <MDBSideNavLink>FAQ</MDBSideNavLink>
+                <MDBSideNavLink>Write a message</MDBSideNavLink>
+              </MDBSideNavCat>
+            </MDBSideNavNav>
+          </MDBSideNav>
+        </MDBContainer>
   
 
     
